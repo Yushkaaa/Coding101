@@ -1,4 +1,4 @@
-mport sys
+import sys
 def moon_weight():
     print('какой ваш вес')
     weight = int(sys.stdin.readline())
