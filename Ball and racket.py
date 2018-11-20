@@ -1,7 +1,8 @@
 from tkinter import *
 import random
 import time
-
+import datetime
+from math import sqrt
 
 
 #мяч
@@ -20,14 +21,16 @@ class Ball:
         self.canvas_width = self.canvas.winfo_width()
         self.hit_bottom = False
 
+       
     #в pos передвются текущие координаты мяча
     def hit_paddle(self, pos):
         #координаты ракетки сохраняем в переменной paddle_pos
         paddle_pos = self.canvas.coords(self.paddle.id)
-        #pos2 координата правая, pos0 координата левая мяча
+        #pos[2] координата правая, pos[0] координата левая мяча
         if pos[2] >= paddle_pos[0] and pos[0] <= paddle_pos[2]:
-            #pos3 нижняя координата, pos1 верхняя
+            #pos[3] нижняя координата, pos[1] верхняя
             if pos[3] >= paddle_pos[1] and pos[3] <= paddle_pos[3]:
+
                 return True
             return False
            
@@ -47,7 +50,7 @@ class Ball:
         if pos[2] >= self.canvas_width:
             self.x = -3
 
-
+           
         
     
 #ракетка
@@ -77,7 +80,7 @@ class Paddle:
           self.x = 2
                
 
-   
+ 
        
  
             
@@ -91,7 +94,22 @@ highlightthickness=0)
 canvas.pack()
 tk.update()
    
+####### СЧЕТ ######
+score = 0
+
     
+canvas.create_text(150, 30, text = 'SCORE', fill = 'black')
+score_text = canvas.create_text(150, 50, fill = 'black')  
+
+def show_score(score):
+    cavans.itemconfig(score_text, text = str(score)) # отображает счет
+def hit_paddle():
+    if pos[3] >= paddle_pos[1] and pos[3] <= paddle_pos[3]:
+        score = score + 1
+        print (score)
+        show_score(score)
+#################    
+
 
 paddle = Paddle(canvas, 'blue')
 ball = Ball(canvas, paddle, 'red')
@@ -103,5 +121,4 @@ while 1:
     tk.update_idletasks()
     tk.update()
     time.sleep(0.01)
-
 
