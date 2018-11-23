@@ -292,3 +292,4 @@ g.sprites.append(platform10)
 sf = StickFigureSprite(g)
 g.sprites.append(sf)
 g.mainloop()
+
