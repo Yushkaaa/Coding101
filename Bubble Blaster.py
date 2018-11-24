@@ -106,7 +106,7 @@ def show_time(time_left):
 
 
 BUB_CHANCE = 10
-TIME_LIMIT = 15
+TIME_LIMIT = 1
 BONUS_SCORE = 100
 score = 0
 bonus = 0
