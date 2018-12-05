@@ -1,5 +1,7 @@
 import datetime
+
 a = datetime.datetime.today().weekday()
+
 if a == 0:
     print("It's Monday.")
 elif a == 1:

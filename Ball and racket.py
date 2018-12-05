@@ -48,10 +48,7 @@ class Ball:
         if pos[0] <= 0:
             self.x = 3
         if pos[2] >= self.canvas_width:
-            self.x = -3
-
-           
-        
+            self.x = -3       
     
 #ракетка
 class Paddle:
@@ -121,4 +118,6 @@ while 1:
     tk.update_idletasks()
     tk.update()
     time.sleep(0.01)
+
+
 

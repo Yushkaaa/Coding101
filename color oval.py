@@ -1,11 +1,15 @@
 from random import*#загружает функции randint и choice из модуля random
 from tkinter import*# загружает функции Tkinter
-size = 700# переменная size задает размер холста 
-window = Tk()#
+
+# переменная size задает размер холста 
+size = 700
+window = Tk()
 canvas = Canvas(window, width = size, height = size)# Создает в окне холст
-canvas.pack()#
+canvas.pack()
+
 while True: # Бесконечный цикл, чтоб прога рисовала круги без остановки
-    col = choice(['pink','orange','purple','yellow', 'red'])# выбор случайного цвета 
+    # выбор случайного цвета 
+    col = choice(['pink','orange','purple','yellow', 'red'])
     x0 = randint(0,size)#
     y0 = randint(0,size)# Рисует в случайном месте и случайного размера
     d = randint(0,size/5)#
