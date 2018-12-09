@@ -16,10 +16,10 @@ class BankAccount(object):
         if amount <= 0:
             print ("Deposit needs to be a positive amount")
             return
-  	else
-        print "Depositing $%.2f" % amoumt
-        self.balance += amount
-        self.show_balance()
+  	else:
+            print "Depositing $%.2f" % amoumt
+            self.balance += amount
+            self.show_balance()
     
     def withdraw(self, amount):
         if amount => self.balance:
