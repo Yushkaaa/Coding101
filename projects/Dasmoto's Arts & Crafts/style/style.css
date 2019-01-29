@@ -5,6 +5,9 @@ h1, h2, h3, p {
 
 h1 {
   background-image:  url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   font-size: 100px;
   text-align: center;
   font-weight: bold;
@@ -17,15 +20,15 @@ h1 {
   color: white;
 }
 
-.item #brush {
+.item .brush {
   background-color: MediumSpringGreen;
 }
 
-.item #frame {
+.item .frame {
   background-color: LightCoral;
 }
 
-.item #paint {
+.item .paint {
   background-color: SkyBlue;
 }
 
