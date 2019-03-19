@@ -1,13 +1,13 @@
 /* Styles */
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Arial', serif;
   font-size: 16px;
   background-color: white;
 
 }
 
 body {
-
+  line-height: 1.4rem;
 }
 
 
@@ -28,6 +28,11 @@ h3 {
   line-height: 1rem;
   color: #3F3F3F;
 }
+
+a {
+  color: #525996;
+}
+
 /* Header Section */
 
 
@@ -104,7 +109,7 @@ ul li:hover {
 
 .main{
   padding-top: 4rem;
-  background-color: #DBDBDB	;
+  background-color: #F7F7F7;
   display:flex;
 }
 
@@ -132,7 +137,7 @@ button {
 }
 
 button {
-  background-color: #656565;
+  background-color: #8C8C8C;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1rem;
@@ -140,7 +145,7 @@ button {
 }
 
 button:hover {
-    background-color:#3F3F3F ;
+    background-color:#7F7F7F ;
     font-size: 1.25rem;
     cursor: pointer;
   }
@@ -185,25 +190,35 @@ button:hover {
   width: 100%;
 }
 
-.second-section h3 {
+.second-section .banner-2 h3 {
   font-size: 2rem;
   font-weight: bold;
-  color: #5D6065;
   padding-top: 2rem;
+}
+
+.second-section .info h3 {
+  color: black;
+}
+
+.second-section p{
+  color: #606060;
 }
 
 .information {
   display: inline;
   padding-top: 1.5rem;
+  width: 40%;
     }
 
 .info {
   display: flex;
   padding: 0.5rem;
-  transition: background-color 200ms linear;}
+  transition: background-color 200ms linear;
+
+}
 
 .info:hover {
-  background-color:#DBDBDB;
+  background-color:	#F7F7F7;
 }
 
 .image-container {
@@ -224,4 +239,70 @@ video {
   justify-content: center;
   padding-left: 1rem;
   padding-bottom: 1.5rem;
+}
+
+/*mobile version*/
+
+@media only screen and (max-width: 600px) {
+  .second-section .information {
+    width: 100%;
+  }
+  .banner-2{
+    display: none;
+  }
+  .desktop{
+    display: none;
+  }
+  .second-section {
+    padding-bottom: 0;
+  }
+
+  .second-section .info {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+  .information {
+    padding-top: 0;
+  }
+}
+
+/* Third Section */
+
+.courses{
+  background-color: #F7F7F7;
+}
+
+.title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+  color: #606060;
+  transition: background-color 200ms linear,
+    font-size;
+}
+
+.course:hover {
+  background-color: #D4D4D4	;
+}
+
+.course h3 {
+  font-weight: 200;
+}
+
+.image img {
+  width: 100%;
 }
