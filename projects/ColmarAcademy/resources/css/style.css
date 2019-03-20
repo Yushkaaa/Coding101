@@ -23,19 +23,24 @@ h1 {
 }
 
 h3 {
-  font-size: 1.17rem;
+
   font-weight: bold;
   line-height: 1rem;
   color: #3F3F3F;
 }
 
+h4 {
+  color: #3F3F3F;
+}
+
+p{
+  color: #3F3F3F;
+}
 a {
   color: #525996;
 }
 
 /* Header Section */
-
-
 
 header {
   display: flex;
@@ -44,44 +49,44 @@ header {
   z-index: 1;
   position: fixed;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: white;
   color: #5F5F63;
 }
 
-header span {
+ header span {
   font-size: 1.5rem;
-}
-
-em {
-  font-weight: bold;
-  color: black;
-}
-
-nav {
-  justify-content: space-between;
-  width: 100%;
-}
-
-nav div {
-  display: flex;
-  align-items: center;
 }
 .logo{
   padding-left: 1.5rem;
 }
 
-.menu {
-  margin-right: 1rem;
+ em {
+  font-weight: bold;
+  color: black;
 }
 
-.menu ul li {
+ nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+ nav div {
+  display: flex;
+  align-items: center;
+}
+
+ ul {
+  margin-right: 1.5rem;
+}
+
+ ul li {
   display: inline;
   padding: 0.5rem;
   cursor: pointer;
   transition: font-size linear 200ms;
 }
 
-ul li:hover {
+ ul li:hover {
   font-size: 1.25rem;
 }
 
@@ -101,10 +106,12 @@ ul li:hover {
     padding-left: 0;
   }
   .mobile {
+    width: 100%;
     display: inline-flex;
     flex: 1;
     justify-content: space-around;
   }
+
 
 }
 
@@ -121,6 +128,7 @@ ul li:hover {
   width: 60%;
   padding: 2rem 1.5rem;
 }
+
 .banner img{
   width: 100%;
 }
@@ -171,13 +179,9 @@ button:hover {
       width: 100%;
       padding: 2rem 1rem;
     }
-    /*.banner-content h1{
-      padding-top: 2rem;
-    }*/
+  
     button{
-
       padding-top: 1.5rem;
-
     }
   }
 
@@ -212,16 +216,15 @@ button:hover {
 
 .information {
   display: inline;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   width: 40%;
     }
 
 .info {
   display: flex;
   width: 100%;
-  padding: 0.5rem;
-  transition: background-color 200ms linear;
 
+  transition: background-color 200ms linear;
 }
 
 .info:hover {
@@ -231,6 +234,7 @@ button:hover {
 .image-container {
   flex: 3.5;
   line-height: 0;
+  padding: 1rem;
 }
 
 .image-container img,
@@ -247,6 +251,9 @@ video {
   padding-left: 1rem;
   padding-bottom: 1.5rem;
 }
+.details h4{
+  padding-bottom: 0.5rem;
+}
 
 /*mobile version*/
 
@@ -262,11 +269,12 @@ video {
   }
   .second-section {
     padding-bottom: 0;
+    padding: 2rem 1rem
   }
 
-  .second-section .info {
+  .info {
     display: block;
-    padding: 2rem 1rem;
+
   }
 
   .information {
@@ -313,4 +321,121 @@ video {
 
 .image img {
   width: 100%;
+}
+
+/*mobile version*/
+
+@media only screen and (max-width: 600px) {
+  .courses {
+    background-color: white;
+  }
+
+  .course {
+    display: none;
+
+  }
+  .courses .mobile {
+    display: block;
+  }
+
+  .mobile .details {
+    background-color: #EAEAEA	;
+    color: #5E5E5E;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: background-color 200ms linear;
+  }
+
+  .mobile .details:hover {
+    background-color: #CFCFCF;
+  }
+
+  .mobile .details h3 {
+    padding: 0;
+  }
+}
+
+
+/*Fourth section*/
+
+.video-section{
+  width: 60%;
+  padding: 1rem 1.5rem;
+}
+
+.information-4 {
+  display: inline;
+  width: 40%;
+    }
+
+.info-4 {
+  display: flex;
+  width: 100%;
+
+  transition: background-color 200ms linear;
+}
+
+.info-4:hover {
+  background-color:	#F7F7F7;
+}
+
+.image-container-4 {
+  flex: 3.5;
+  line-height: 0;
+  padding: 1rem;
+}
+
+.image-container-4 img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.details-4 {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.details-4 h4{
+  padding-bottom: 0.5rem;
+}
+/*mobile version*/
+@media only screen and (max-width: 600px) {
+  .thesis .video-section{
+    width: 100%;
+  }
+
+  video {
+    padding-bottom: 1.5rem;
+  }
+  .desktop {
+    display: none;
+  }
+}
+/* Footer */
+
+footer {
+  background-color: white;
+}
+
+footer nav {
+  justify-content: space-between;
+}
+
+footer nav h4 {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+.menu ul li{
+  color: #3F3F3F;
+}
+
+@media only screen and (max-width: 600px) {
+  footer h4 {
+    padding: 1rem;
+  }
+
 }
