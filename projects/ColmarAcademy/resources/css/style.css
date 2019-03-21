@@ -23,14 +23,15 @@ h1 {
 }
 
 h3 {
-
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight:200;
   line-height: 1rem;
   color: #3F3F3F;
 }
 
 h4 {
   color: #3F3F3F;
+  font-size: 1rem;
 }
 
 p{
@@ -97,16 +98,14 @@ header {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .logo,
   .menu {
     display: none;
   }
-  header img {
-    padding-left: 0;
-  }
+
   .mobile {
-    width: 100%;
+    /*width: 100%;*/
     display: inline-flex;
     flex: 1;
     justify-content: space-around;
@@ -165,21 +164,23 @@ button:hover {
 
   /*mobile version*/
 
-  @media only screen and (max-width: 600px){
-    .main {
-      flex-direction: column;
-      padding: 0;
-      width: 100%;
-    }
+@media only screen and (max-width: 590px){
+  .main {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
     .banner{
       padding: 0;
       width: 100%;
-    }
+      }
+
     .banner-content {
       width: 100%;
       padding: 2rem 1rem;
     }
-  
+
     button{
       padding-top: 1.5rem;
     }
@@ -257,7 +258,7 @@ video {
 
 /*mobile version*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .second-section .information {
     width: 100%;
   }
@@ -312,12 +313,12 @@ video {
 }
 
 .course:hover {
-  background-color: #D4D4D4	;
+  background-color: #CFCFCF	;
 }
 
-.course h3 {
-  font-weight: 200;
-}
+/*.course h3 {
+  font-weight: bold;
+}*/
 
 .image img {
   width: 100%;
@@ -325,7 +326,7 @@ video {
 
 /*mobile version*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .courses {
     background-color: white;
   }
@@ -339,7 +340,7 @@ video {
   }
 
   .mobile .details {
-    background-color: #EAEAEA	;
+    background-color: #F7F7F7	;
     color: #5E5E5E;
     padding: 1rem;
     margin: 0.5rem;
@@ -361,6 +362,9 @@ video {
 .video-section{
   width: 60%;
   padding: 1rem 1.5rem;
+}
+.video-section p{
+  padding-bottom:  2rem;
 }
 
 .information-4 {
@@ -402,8 +406,9 @@ video {
 .details-4 h4{
   padding-bottom: 0.5rem;
 }
+
 /*mobile version*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .thesis .video-section{
     width: 100%;
   }
@@ -417,23 +422,22 @@ video {
 }
 /* Footer */
 
-footer {
-  background-color: white;
-}
-
-footer nav {
+footer{
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: #E8E8E8;
+  padding-top:1rem;
+  padding-left:1.5rem;
+  padding-bottom:3rem;
+  display:flex;
   justify-content: space-between;
 }
 
-footer nav h4 {
-  padding-left: 1.5rem;
-  padding-top: 1rem;
-}
 .menu ul li{
   color: #3F3F3F;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   footer h4 {
     padding: 1rem;
   }
