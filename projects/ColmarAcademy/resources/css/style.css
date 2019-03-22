@@ -1,6 +1,6 @@
 /* Styles */
 html {
-  font-family: 'Arial', serif;
+  font-family: 'Calibri', serif;
   font-size: 16px;
   background-color: white;
 
@@ -16,15 +16,15 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2rem;
   color: #3F3F3F;
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight:200;
+  font-size: 1.3rem;
+  font-weight:500;
   line-height: 1rem;
   color: #3F3F3F;
 }
@@ -48,7 +48,7 @@ header {
   height: 4rem;
   width: 100%;
   z-index: 1;
-  position: fixed;
+  position: relative;
   align-items: center;
   background-color: white;
   color: #5F5F63;
@@ -97,6 +97,9 @@ header {
 .mobile {
   display: none;
 }
+.mobile-menu {
+  display: none;
+}
 
 @media only screen and (max-width: 590px) {
   .logo,
@@ -105,11 +108,31 @@ header {
   }
 
   .mobile {
-    /*width: 100%;*/
     display: inline-flex;
     flex: 1;
     justify-content: space-around;
   }
+
+  .mobile-menu {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-right: 0rem;
+  }
+
+  .mobile-menu ul li{
+    text-align: center;
+  }
+
+  .mobile-menu ul li a img {
+    max-height: 27px;
+    width: 27px;
+}
 
 
 }
@@ -117,8 +140,7 @@ header {
 /*Main section*/
 
 .main{
-  padding-top: 4rem;
-  background-color: #F7F7F7;
+  background-color: #dbdbdb;
   display:flex;
   width: 100%;
 }
@@ -130,6 +152,8 @@ header {
 
 .banner img{
   width: 100%;
+  object-fit: cover;
+  justify-content: center;
 }
 
 .banner-content{
@@ -149,11 +173,13 @@ button {
 }
 
 button {
-  background-color: #8C8C8C;
+  background-color: #4a4a4a;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
+  color: white;
+  border: none;
 }
 
 button:hover {
@@ -165,11 +191,15 @@ button:hover {
   /*mobile version*/
 
 @media only screen and (max-width: 590px){
-  .main {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-  }
+
+    .main {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    button{
+      background-color: #8C8C8C;
+    }
 
     .banner{
       padding: 0;
@@ -178,12 +208,25 @@ button:hover {
 
     .banner-content {
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 2rem 0rem;
     }
 
-    button{
-      padding-top: 1.5rem;
+    .banner-content h1, h3, button{
+      width: 100%;
     }
+
+    .inner-text{
+      padding: 0rem 1rem;
+    }
+
+    .inner-text > * {
+      width: 100%;
+    }
+
+    .banner img{
+      max-height: 250px;
+    }
+
   }
 
   /*Second Section*/
@@ -213,6 +256,7 @@ button:hover {
 
 .second-section p{
   color: #606060;
+
 }
 
 .information {
@@ -224,7 +268,6 @@ button:hover {
 .info {
   display: flex;
   width: 100%;
-
   transition: background-color 200ms linear;
 }
 
@@ -249,8 +292,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 1rem;
   padding-bottom: 1.5rem;
+  padding-left: 1rem;
 }
 .details h4{
   padding-bottom: 0.5rem;
@@ -270,7 +313,7 @@ video {
   }
   .second-section {
     padding-bottom: 0;
-    padding: 2rem 1rem
+    padding: 2rem 0
   }
 
   .info {
@@ -280,6 +323,10 @@ video {
 
   .information {
     padding-top: 0;
+  }
+
+  .details{
+    padding-left: 1.5rem;
   }
 }
 
@@ -316,9 +363,7 @@ video {
   background-color: #CFCFCF	;
 }
 
-/*.course h3 {
-  font-weight: bold;
-}*/
+
 
 .image img {
   width: 100%;
@@ -329,6 +374,10 @@ video {
 @media only screen and (max-width: 590px) {
   .courses {
     background-color: white;
+    padding-bottom: 2rem;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: #E8E8E8;
   }
 
   .course {
@@ -340,7 +389,7 @@ video {
   }
 
   .mobile .details {
-    background-color: #F7F7F7	;
+    background-color: #d8d8d8	;
     color: #5E5E5E;
     padding: 1rem;
     margin: 0.5rem;
@@ -375,7 +424,6 @@ video {
 .info-4 {
   display: flex;
   width: 100%;
-
   transition: background-color 200ms linear;
 }
 
@@ -411,6 +459,7 @@ video {
 @media only screen and (max-width: 590px) {
   .thesis .video-section{
     width: 100%;
+    padding: 0;
   }
 
   video {
@@ -438,8 +487,14 @@ footer{
 }
 
 @media only screen and (max-width: 590px) {
+
+  footer{
+    border: none;
+    padding: 0;
+  }
   footer h4 {
-    padding: 1rem;
+    padding: 0.7rem;
+    font-size: 0.8rem;
   }
 
 }
