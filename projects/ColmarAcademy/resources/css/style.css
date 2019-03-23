@@ -140,7 +140,7 @@ header {
 /*Main section*/
 
 .main{
-  background-color: #dbdbdb;
+  background-color: #F7F7F7;
   display:flex;
   width: 100%;
 }
@@ -263,7 +263,12 @@ button:hover {
   display: inline;
   padding-top: 1rem;
   width: 40%;
-    }
+}
+
+.information .details a{
+  padding-top: 0.5rem;
+}
+
 
 .info {
   display: flex;
@@ -416,6 +421,8 @@ video {
   padding-bottom:  2rem;
 }
 
+
+}
 .information-4 {
   display: inline;
   width: 40%;
