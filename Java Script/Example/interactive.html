@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Интерактивное программирование</title>
+</head>
+
+<body>
+  <h1 id="heading">Привет, мир!</h1>
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+  <script>
+  //отступ слева
+  var leftOffset = 0;
+  var moveHeading = function () {
+    //для поиска элемента(h1) и вызываем метод offset
+    //чтобы задать смещение заголовка от левого края
+    //экрана, сдвигая его вправо.
+    $("#heading").offset({ left: leftOffset });
+    leftOffset++;
+    //если > 200, сбрасываем значение до 0.
+    if (leftOffset > 200) {
+      leftOffset = 0;
+    }
+  };
+  setInterval(moveHeading, 30);
+  </script>
+
+</body>
+</html>
