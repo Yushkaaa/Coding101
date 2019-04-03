@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Изучаем DOM</title>
+</head>
+
+<body>
+  <h1 id="main-heading">Привет, мир!</h1>
+  <h2> Текс уплывет вверх и появится <h2>
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+  <script>
+  //заменяет и затухает текст
+  $("h1").text("Этот текст скоро исчезнет и появится!").fadeOut(3000).fadeIn(2000);
+  $("h2").slideUp(1000).slideDown(1000);
+  </script>
+
+</body>
+</html>
