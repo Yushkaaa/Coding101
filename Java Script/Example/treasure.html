@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Найди клад!</title>
+
+
 </head>
 
 <body>
   <h1 id="heading">Найди клад!</h1>
 
-  <img id="map" width=400 height=400 src"http://nostarch.com/images/treasuremap.png">
+  <img id="map" width=400 height=400 
+  src="http://nostarch.com/images/treasuremap.png">
 
   <p id="distance"></p>
+
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
   <script>
   // Получить случайное число от 0 до size-1
@@ -56,7 +61,7 @@
    };
 
    // Добавляем элементу img обработчик клика
-  $("#map").clik(function (event) {
+  $("#map").click(function (event) {
     clicks++;
 
     // Получаем расстояние от места клика до клада
@@ -73,11 +78,7 @@
     alert("Клад найден! Сделано кликов: " + clicks);
   }
 
-
    });
   </script>
-
-
 </body>
-
 </html>
