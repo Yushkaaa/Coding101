@@ -1,6 +1,6 @@
 // Foursquare API Info
-const clientId = 'fd36bd829bd34a1cade715daff51d77b';
-const clientSecret = '1c789c13fedf4045887493f7159497b3';
+const clientId = '1OSF1SNPGPNCUA203UIURE5COFHMUJ3FFBRQRR1NB1CQIXL2'
+const clientSecret = 'EGHWUBW4S1BYH5GWUUUYT2UERAVJTHWUBMQGNDGRRVHPUWBC'
 const url = 'https://api.foursquare.com/v2/venues/explore?near=';
 
 // APIXU Info 
