@@ -7,9 +7,8 @@ const createVenueHTML = (name, location, iconSource) => {
   <p>${location.country}</p>`;
 }
 
-const temp_c = (temp) => {
-  return Math.round(((temp-32)*5/9));
-}
+const temp_c = (temp) => Math.round(((temp-32)*5/9));
+
 
 const createWeatherHTML = (currentDay) => { 
   return `<h2> High: ${temp_c(currentDay.day.maxtemp_f)}</h2>
