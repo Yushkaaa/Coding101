@@ -45,14 +45,14 @@ const randomChoreDoorGenerator = () => {
     openDoor1 = botDoorPath;
     openDoor2 = beachDoorPath;
     openDoor3 = spaceDoorPath;
-  } else if (choreDoor === 1) {
+} else if (choreDoor === 1) {
     openDoor2 = botDoorPath;
     openDoor1 = beachDoorPath;
     openDoor3 = spaceDoorPath;
-  } else { (choreDoor ===2)
-  openDoor3 = botDoorPath;
-  openDoor1 = beachDoorPath;
-  openDoor3 = spaceDoorPath;
+} else  { (choreDoor ===2) 
+    openDoor3 = botDoorPath;
+    openDoor1 = beachDoorPath;
+    openDoor2 = spaceDoorPath;
   }
 }
 
