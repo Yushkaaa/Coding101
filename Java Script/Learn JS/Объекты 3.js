@@ -1,4 +1,4 @@
-//for in obj
+/////////for in obj
 for (key in obj) {
   /* ... делать что-то с obj[key] ... */
 }
@@ -17,7 +17,7 @@ for (var key in menu) {
 alert( "Всего свойств: " + counter );
 
 
-////
+//////////
 var menu = {
     width: 300,
     height: 200,
@@ -30,3 +30,22 @@ var menu = {
   
     alert( "Ключ: " + key + " значение: " + menu[key] );
   }
+
+
+  /////////клонирует 
+  var user = {
+    name: "Вася",
+    age: 30
+  };
+  
+  var clone = {}; // новый пустой объект
+  
+  // скопируем в него все свойства user
+  for (var key in user) {
+    clone[key] = user[key];
+  }
+  
+  // теперь clone - полностью независимая копия
+  clone.name = "Петя"; // поменяли данные в clone
+  
+  alert( user.name ); // по-прежнему "Вася"
