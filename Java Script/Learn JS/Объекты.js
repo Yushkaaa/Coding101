@@ -4,9 +4,7 @@ var menuSetup = {
   height: 200,
   title: "Menu"
 };
-
 // то же самое, что:
-
 var menuSetup = {};
 menuSetup.width = 300;
 menuSetup.height = 200;
@@ -49,3 +47,15 @@ var user = {
     Вася 25
     Петя 22
     Маша 19
+
+
+
+//Создайте пустой объект user.
+//Добавьте свойство name со значением Вася.
+//Добавьте свойство surname со значением Петров.
+//Поменяйте значение name на Сергей.
+//Удалите свойство name из объекта.
+var user = {};
+user.name = "Ekaterina";
+user.surname = "Iushkovskaia";
+delete user.name;
