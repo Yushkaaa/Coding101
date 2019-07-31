@@ -1,0 +1,44 @@
+<!-- Element.hasAttribute() метод возвращает Boolean значение 
+указывающее, имеет ли указанный элемент указанный атрибут или нет. -->
+
+<!-- Счетчик +1 при нажатии -->
+<!-- Показывается форма для заполнения при нажатии -->
+
+<!doctype html>
+<body>
+<!-- Счётчик:
+<button data-counter>1</button>
+Ещё счётчик:
+<button data-counter>2</button> -->
+
+<button data-toggle-id="subscribe-mail">
+        Показать форму подписки
+</button>
+      
+<form id="subscribe-mail" hidden>
+        Ваша почта: <input type="email">
+    </form>
+
+<!-- <script>
+  document.onclick = function(event) {
+    if (!event.target.hasAttribute('data-counter')) return;
+
+    var counter = event.target;
+
+    counter.innerHTML++;
+  };
+</script> -->
+
+<script>
+        document.onclick = function(event) {
+          var target = event.target;
+      
+          var id = target.getAttribute('data-toggle-id');
+          if (!id) return;
+      
+          var elem = document.getElementById(id);
+      
+          elem.hidden = !elem.hidden;
+        };
+</script>
+</body>
