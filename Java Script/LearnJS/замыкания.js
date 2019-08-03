@@ -1,3 +1,9 @@
+/*Глобальными называют переменные и функции, которые не находятся 
+внутри какой-то функции. То есть, иными словами, если переменная 
+или функция не находятся внутри конструкции function, то они – «глобальные».
+
+ */
+
 //пример №1
 let a = 12;
 function f() {
@@ -103,7 +109,7 @@ z(x);
  
 
 
-///Пример
+//Пример
 var y = 5;
 var x = function(){
     return y;
@@ -127,3 +133,31 @@ var z = function(t){
 console.log(z(x));//вывод равен 10
 /* Во второйм примере результат функции 10,потому что внутри функции z() 
 мы уже не объявляем локальную переменную y, а ссылаемся на глобальную.  */
+
+
+////////Два вида счетчиков//////////
+/* Cчетчик №1*/
+function makeCounter() {
+    var currentCount = 1;
+  
+    return function() { // (**)
+      return currentCount++;
+    };
+  }
+var counter = makeCounter(); // (*)
+  // каждый вызов увеличивает счётчик и возвращает результат
+  console.log(counter()); // 1
+ 
+  /* Cчетчик №2*/
+  function makeCounter() {
+    function counter() {
+      return counter.currentCount++;
+    };
+    counter.currentCount = 1;
+  
+    return counter;
+  }
+  
+  var counter = makeCounter();
+  counter.currentCount = 5;
+  console.log( counter() ); // 5

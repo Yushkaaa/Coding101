@@ -1,0 +1,52 @@
+<!-- getNext() – получить следующее значение, то, что раньше делал вызов counter().
+set(value) – поставить значение.
+reset() – обнулить счётчик. -->
+
+<!-- Вариант счетчика №1, через объект -->
+<!DOCTYPE html>
+<script>
+function makeCounter() {
+  var currentCount = 1;
+
+  return { // возвратим объект вместо функции
+    getNext: function() {
+      return currentCount++;
+    },
+
+    set: function(value) {
+      currentCount = value;
+    },
+
+    reset: function() {
+      currentCount = 1;
+    }
+  };
+}
+var counter = makeCounter();
+console.log( counter.getNext() ); // 1
+console.log( counter.getNext() ); // 2
+counter.set(5);
+console.log( counter.getNext() ); // 5
+</script>
+
+<!-- Вариант счетчика №2, через функцию -->
+<script>
+  function makeCounter(){
+    var currentCount = 1;
+
+    function counter(){
+      return currentCount++;
+    };
+    // добавление методов к counter
+    counter.set = function(value){
+      currentCount = value;
+    };
+    counter.reset = function(value){
+      currentCount = 1;
+    };
+    var counter = makeCounter;
+  }
+  console.log(counter())
+  counter.set(5);
+  console.log(counter())
+</script>
