@@ -22,10 +22,11 @@ console.log(sumAll(1,3))//4
 //вывод всех параметров
 function wordsGame(preposition, noun, ...other){
     console.log(preposition + ' ' + noun + ' ' + other);
-    console.log("А вот что в переменной other : " + other);
-    console.log("А это первый элемент other - " + other[0])
-    console.log('---------------')
-}
-
-wordsGame("В", "сумке","лежит", "красный", "кошелек")
-wordsGame("На", "столе","лежит", "тетрадь")
+     console.log("А вот что в переменной other : " + other);
+     console.log("А это первый элемент other - " + other[0])
+     console.log("А это второй элемент other - " + arguments[1])
+     console.log('---------------')
+ }
+ 
+ wordsGame("В", "сумке","лежит", "красный", "кошелек")
+ wordsGame("На", "столе","лежит", "тетрадь")
