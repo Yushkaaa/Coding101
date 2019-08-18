@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+<script>
+
+    
+let animals = {
+    eat : true,
+    fly: false 
+};
+
+cat  = {
+    sound : "meow",
+    __proto__:animals
+}
+//  cat.__proto__ = animals;
+//  console.log(cat.eat)
+
+/* Объект, на который указывает ссылка __proto__, 
+называется «прототипом». В данном случае получилось, 
+что animal является прототипом для cat.
+
+Также говорят, что объект cat «прототипно наследует» от animal.*/
+
+
+//Вызов obj.hasOwnProperty(prop) возвращает true, 
+//если свойство prop принадлежит самому объекту obj, 
+//иначе false.
+console.log(cat.hasOwnProperty('jumps'))
+console.log(cat.hasOwnProperty('sound'))
+
+for(let key in cat){//выведет все
+    console.log(key + " = " + cat[key]);
+}
+
+</script>
+</body>
+</html>
