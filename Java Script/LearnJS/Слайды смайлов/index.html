@@ -33,7 +33,7 @@
       lis[i].style.position = 'relative';
       var span = document.createElement('span');
       // обычно лучше использовать CSS-классы,
-      // но этот код - для удобства разработки, так что не будем трогать стили
+      // но этот код - для удобства разработки
       span.style.cssText = 'position:absolute;left:0;top:0';
       span.innerHTML = i + 1;
       lis[i].appendChild(span);
@@ -47,7 +47,7 @@
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');
 
-    let position = 0; // текущий сдвиг влево
+    let position = 0; // текущий сдвиг влево, тк в справа нет картинок
 
     carousel.querySelector('.prev').onclick = function() {
       // сдвиг влево

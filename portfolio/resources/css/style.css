@@ -1,0 +1,188 @@
+/*Styles*/
+html{
+  background-color: #F4F4F7;
+  font-family: 'Calibri', serif;
+  font-size: 16px;
+  /* text-align: center; */
+}
+
+body {
+    line-height: 1.4rem;
+  }
+
+.flex{
+    display:flex;
+  }
+
+h1 {
+    font-family:'Lucida Handwriting';
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    line-height: 0.5rem;
+    color: black;
+    /* font-size: 70px */
+    
+  }
+
+  h6, h2, h3, h4 {
+    font-family:'Lucida Handwriting';
+    /* font-size: 2.5rem; */
+    /* font-weight: bold; */
+    line-height: 1.2rem;
+    color: black;
+  }
+
+  /* Header Section */
+header {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    align-items: center;
+    background-color:#F1F1F9;
+
+  } 
+ 
+
+  nav {
+    justify-content: center;
+    width: 100%;
+  }
+  
+ nav div {
+    display: flex;
+    align-items: center;
+  }
+  
+   ul {
+    margin-right: 1.5rem;
+  }
+  
+   ul li {
+    display: inline;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: font-size linear 200ms;
+  }
+  
+   ul li:hover {
+    font-size: 1.25rem;
+  }
+  /* .menu img{
+    width: 5%;
+    
+  }
+  .language{
+    padding-right: 5px;
+
+  } */
+  
+/* Main content */
+.mainblock{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /* background-image: url("./dis.png") */
+}
+.mainblock h1 {
+  /* justify-content: center;
+  align-items: center; */
+  z-index: 1;
+  text-align: center; 
+
+
+}
+ .mainblock img{
+  width: 100%;
+  object-fit: contain;
+  z-index: 2;
+
+}
+.images{
+  position	: relative;
+  width		: 100%;
+
+}
+.images h1 {
+  position	: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  /* width: 80%; */
+  padding: 225px 100px;
+  /* top: 200px;
+  left: 300px; */
+}
+.images h6 {
+  position	: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  /* top: 220px;
+  left: 300px; */
+  padding: 270px 100px;
+}
+
+/* About me */
+
+.about h4{
+  text-align: center;
+}
+.about{
+  width: 100%;
+  text-align: center;
+}
+.text{
+ padding: 10px 50px;
+ text-align: center;
+
+}
+
+
+/* Portfolio */
+
+.projects{
+  background-color: #F7F7F7;
+  width: 100%;
+}
+.title{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.projects-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.project{
+  width:25%;
+  margin: 1rem;
+  background-color: white;
+  color:#606060;
+  transition: background-color 200ms linear,
+  font-size;
+}
+.project:hover{
+  background-color: #CFCFCF	;
+}
+.image img{
+  width: 100%;
+}
+
+/* Skills */
+.skills{
+  background-color: #F1F1F9;
+  width: 100%;
+}
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.column{
+  width: 25%;
+}

@@ -55,7 +55,7 @@ function Counter() {
 
 function sum (a){
     return function(b){
-        a+b
+       return a+b
     }
 }
 console.log(sum(10)(15))
