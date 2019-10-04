@@ -16,17 +16,13 @@ body {
 h1 {
     font-family:'Lucida Handwriting';
     font-size: 2.5rem;
-    /* font-weight: bold; */
     line-height: 0.5rem;
     color: black;
-    /* font-size: 70px */
     
   }
 
   h6, h2, h3, h4 {
     font-family:'Lucida Handwriting';
-    /* font-size: 2.5rem; */
-    /* font-weight: bold; */
     line-height: 1.2rem;
     color: black;
   }
@@ -40,12 +36,10 @@ header {
     position: fixed;
     align-items: center;
     background-color:#E8E8F0
-
   } 
- 
 
   nav {
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
   }
   
@@ -68,61 +62,27 @@ header {
    ul li:hover {
     font-size: 1.25rem;
   }
-  /* .menu img{
-    width: 5%;
-    
-  }
-  .language{
-    padding-right: 5px;
-
-  } */
+ 
   
-/* Main content */
-.mainblock{
-  /* background-color: #E3E2E0; */
+/*BANNER*/
+.banner{
+  background: url(./dis.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35em;
+}
+.headline{
+  width: 20rem;
+  padding: 6rem 6rem;
   position: relative;
-  display: inline-block;
-  width: 100%;
-  /* background-image: url("./dis.png") */
+  top:9rem;
 }
-.mainblock h1 {
-  /* justify-content: center;
-  align-items: center; */
-  /* z-index: 1; */
-  text-align: center; 
+.headline h1{
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
 
-
-}
- .mainblock img{
-  width: 100%;
-  object-fit: contain;
-  z-index: 2;
-
-}
-.images{
-  position	: relative;
-  width		: 100%;
-
-}
-.images h1 {
-  position	: absolute;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  /* width: 80%; */
-  padding: 320px 150px;
-  /* top: 200px;
-  left: 300px; */
-}
-.images h6 {
-  position	: absolute;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  /* top: 220px;
-  left: 300px; */
-  padding: 400px 150px;
-}
 
 /* About me */
 
@@ -134,7 +94,7 @@ header {
   text-align: center;
 }
 .text{
- padding: 10px 60px;
+ padding: 10px 160px;
  text-align: center;
 
 }
@@ -142,7 +102,6 @@ header {
 
 /* Skills */
 #skills{
-  /* background-color: #F1F1F9; */
   width: 100%;
 }
 .skills-list{
@@ -159,7 +118,6 @@ header {
 /* Portfolio */
 
 #projects{
-  /* background-color: #F7F7F7; */
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -183,10 +141,7 @@ header {
   font-size;
 }
 .details h3, h5{
-  /* justify-content: center; */
   text-align: center;
-
-
 }
 
 .project:hover{
@@ -195,6 +150,95 @@ header {
 .image img{
   width: 100%;
 }
+
+
+/* ContactMe */
+.contact-me{
+  margin: 0;
+  padding: 12px 0;
+}
+
+.contact-container{
+  max-width: 780px;
+  padding:50px 16;
+  margin: 0 auto;
+  font-size: 0;
+
+}
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin: 16px;
+}
+.contact-form-container {
+  display: inline-block;
+  width: 100%;
+  margin-right: 16px;
+  vertical-align: top;
+  font-size: 12px;
+}
+.contact-form-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-form {
+  color: rgb(109, 109, 110);
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: inherit; 
+  font: inherit; 
+  margin: 0; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  box-sizing: border-box;
+  background-color: #E7E6EE;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin-top: 16px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #7EAFF0;
+  padding: 10px 30px;
+  border-radius: 10px; /* Уголки */
+  margin-top: 24px;
+  text-transform: uppercase;
+  color:black;
+  float: right;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  user-select: none;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:active {
+  transform: scale(1.05);
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-form textarea {
+  height: 140px;
+  background-color: #E7E6EE;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin-top: 16px;
+  resize: none;
+}
+
+
 
 
 /* footer */
@@ -208,6 +252,14 @@ footer{
   display:flex;
   justify-content: space-between;
 }
-/* .copyright{
-  padding-left: 5px;
-} */
+
+/* NOTES 
+1) color: inherit - наследует значение свойства у родительского элемента
+2) transition: 0.5s ease-in-out - Устанавливает, насколько быстро должно 
+изменяться значение стилевого свойство для которого применяется эффект перехода.
+3) text-decoration - оформление текста в виде подчеркивания, перечеркивания, линии над текстом и мигания
+
+
+
+
+*/

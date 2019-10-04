@@ -33,52 +33,22 @@
 
   <!-- Main content -->
   <main>
-    <section class="mainblock">
+
+    <div class="banner">
+      <div class="headline">
+        <h1>Ekaterina Yush</h1>
+        <h6>Frontend Developer in China</h6>
+      </div>
+    </div>
+
+    <!-- <section class="mainblock">
       <div class = "images">
         <h1>Ekaterina Yush</h1>
         <h6>Frontend Developer in China</h6>
         <img src="./resources/css/dis.png" alt="banner">
 
-
-        <div>
-  <!-- Contact Heading -->
-        <div>
-                  <!-- Twitter Column-->
-                  <div>
-                    <div>
-                      <a href="https://twitter.com/yushkaaa" >
-                      </a>
-                    </div>
-                  </div>
-        
-        
-                  <!-- GitHub Column -->
-                  <div>
-                    <div>
-                      <a href="https://github.com/Yushkaaa" >
-                      </a>
-                    </div>
-                  </div>
-        
-                  <!-- Email Column-->
-                  <div>
-                    <div>
-                      <a href="mailto:yushkaaa@icloud.com" >
-                      </a>
-                    </div>
-                  </div>
-        
-                  <!-- LinkedIn Column-->
-                  <div>
-                    <div>
-                      <a href="https://www.linkedin.com/in/ekaterina-yush-395040146/" >
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                </div>
       </div>
-    </section>
+    </section> -->
     <!-- About me -->
     <div id="about"> 
         <div>
@@ -96,7 +66,7 @@
         <div>
             <h2 class="title">Education</h2>
             <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
+          </div>
     </section>
     <!-- Skills section -->
     <div id="skills">
@@ -121,15 +91,8 @@
               <p>Zeplin</p>
               <p>Adobe XD</p>
           </div>
-
         </div>
-
     </div>
-
-
-
-
-
 
     <!-- Portfolio -->
     <div id="projects">
@@ -139,7 +102,7 @@
         <!-- 1Adhoc -->
         <div class="project">
           <div class="image">
-            <a src="./resources/website/Adhoc/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/adhoc.jpeg"> </a>
+            <a href="./resources/website/Adhoc/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/adhoc.jpeg"> </a>
           </div>
           <div class="details">
             <h3>Adhoc</h3>
@@ -149,7 +112,7 @@
         <!-- 2ColmarAcademy -->
         <div class="project">
             <div class="image">
-              <a src="resources/website/ColmarAcademy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/ColmarAcademy.jpeg"></a>
+              <a href="./resources/website/ColmarAcademy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/ColmarAcademy.jpeg"></a>
             </div>
             <div class="details">
               <h3>ColmarAcademy</h3>
@@ -159,7 +122,7 @@
         <!-- 3Jumpstart -->
         <div class="project">
             <div class="image">
-              <a src="resources/website/jumpstart/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/jumpstart.jpeg"></a>
+              <a href="./resources/website/jumpstart/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/jumpstart.jpeg"></a>
             </div>
             <div class="details">
               <h3>Jumpstart</h3>
@@ -169,7 +132,7 @@
         <!-- 4Secret Agent Supply -->
         <div class="project">
             <div class="image">
-              <a src="resources/website/SecretAgentSupply/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/SecretAgentSupply.jpeg"></a>
+              <a href="./resources/website/SecretAgentSupply/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/SecretAgentSupply.jpeg"></a>
             </div>
             <div class="details">
               <h3>Secret Agent Supply</h3>
@@ -179,7 +142,7 @@
         <!-- 5Excursion -->
         <div class="project">
             <div class="image">
-              <a src="resources/website/Excursion/index.html" target="_blank"> <img class="img-responsive" src="resources/images/Excursion.jpeg"></a>
+              <a href="./resources/website/Excursion/index.html" target="_blank"> <img class="img-responsive" src="resources/images/Excursion.jpeg"></a>
             </div>
             <div class="details">
               <h3>Excursion</h3>
@@ -189,7 +152,7 @@
         <!-- Tea Cozy -->
         <div class="project">
             <div class="image">
-              <a src="resources/website/Tea Cozy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/Tea Cozy.jpeg"></a>
+              <a href="./resources/website/Tea Cozy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/Tea Cozy.jpeg"></a>
             </div>
             <div class="details">
               <h3>Tea Cozy</h3>
@@ -201,6 +164,24 @@
     </div>
   </main>
 
+
+<!-- ContactMe -->
+<div class="contact-me" id="contact-me" >
+<div class="contact-container">
+  <div>
+    <h2 class="contact-title">Want to work together?</h2>
+  </div>
+  <div class="contact-form-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="text" name="subject" placeholder="Subject"><br>
+        <textarea rows="10">Write your message here...</textarea><br>
+        <input type="submit" value="send">
+      </form>
+  </div>
+</div>
+</div>
   <!-- Footer -->
   <footer>
     <div class="flex">
@@ -212,3 +193,12 @@
 </body>
 
 </html>
+
+<!-- NOTES
+1) Required - поле формы обязательным для заполнения 
+2) Placeholder - текст внутри поля формы, который исчезает
+3) Submit - происходит отправка данных на сервер.
+4) Textarea rows="10" - высота поля в строках текста.
+
+
+-->

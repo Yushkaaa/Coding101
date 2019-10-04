@@ -1,0 +1,68 @@
+/*Styles*/
+
+html{
+    background-color:  #F4F4F7;    
+}
+
+body {
+    font-family: 'Calibri', serif;
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+h2{
+    font-family: 'Lucida Handwriting';
+    line-height: 1.2rem;
+    color: black;
+  }
+/*HEADER*/
+
+header {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    /* z-index: 1; */
+    position: relative;
+    /* align-items: center; */
+    background-color:#E8E8F0;
+    /* border: 1px solid black; Параметры границы */
+
+  } 
+  
+  header h2{
+      padding-left: 30px;
+  }
+/*MAIN*/
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* margin: 10px 20px; */
+}
+.img-block{
+    padding: 20px 30px;
+    width: 50%;
+}
+.info-block{
+    padding: 20px 30px;
+    width: 50%;
+}
+/* .info-block button{
+    justify-content: center;
+
+} */
+img{
+    width: 90%;
+}
+
+button{
+    background-color: #7EAFF0;
+    padding: 10px 30px;
+    border-radius: 10px; /* Уголки */
+    /* text-transform: uppercase;
+    color:black;
+    float: right;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    user-select: none; */
+}
