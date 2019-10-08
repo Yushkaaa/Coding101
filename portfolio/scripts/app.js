@@ -1,2 +1,4 @@
-import {Projects} from './projects/projects.component.js'
-new Projects({element: document.querySelector('.content')});
+import {ProjectsComponent} from './projects/projects.component.js'
+
+
+new ProjectsComponent({element: document.querySelector('.content')}); 

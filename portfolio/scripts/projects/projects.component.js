@@ -1,71 +1,134 @@
-export class Projects{
+import{ProjectsCatalogComponent} from "./project-catalog/project-catalog.component.js"
+export class ProjectsComponent{
     constructor({element}){
         this._element = element;
-        this._render = render;
+        this._render();
+        this._catalog = new ProjectsCatalogComponent({
+            element: this._element.querySelector('.projects-catalog')
+        })
 
     }
     _render(){
-        this._element.innerHTML = ` <div class="projects-list">
-        <!-- 1Adhoc -->
-        <div class="project">
-          <div class="image">
-            <a href="./resources/website/Adhoc/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/adhoc.jpeg"> </a>
+        this._element.innerHTML = ` 
+         <header>
+        <nav class="flex">
+          <div class="menu">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+            <!-- <div class="language">
+              <img src="./resources/images/arton93.jpeg" alt="">
+              <img src="./resources/images/s1200.gif" alt="">
+             </div> -->
           </div>
-          <div class="details">
-            <h3>Adhoc</h3>
-            <h5><a href="resources/website/Adhoc/adhoc.png" target="_blank">Design specification</a></h5>
+    
+      </nav>
+      </header>
+    
+      <!-- Main content -->
+      <main>
+    
+        <div class="banner">
+          <div class="headline">
+            <h1>Ekaterina Yush</h1>
+            <h6>Frontend Developer in China</h6>
           </div>
         </div>
-        <!-- 2ColmarAcademy -->
-        <div class="project">
-            <div class="image">
-              <a href="./resources/website/ColmarAcademy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/ColmarAcademy.jpeg"></a>
-            </div>
-            <div class="details">
-              <h3>ColmarAcademy</h3>
-              <h5><a href="resources/website/ColmarAcademy/colmar-academy-spec.png" target="_blank">Design specification</a></h5>
+    
+        <!-- <section class="mainblock">
+          <div class = "images">
+            <h1>Ekaterina Yush</h1>
+            <h6>Frontend Developer in China</h6>
+            <img src="./resources/css/dis.png" alt="banner">
+    
+          </div>
+        </section> -->
+        <!-- About me -->
+        <div id="about"> 
+            <div>
+                <h2 class="title">Portfolio</h2>
+                <h4>I'm a creative web developer</h4>
+                <h3 class="title">About me</h3>
+    
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
             </div>
           </div>
-        <!-- 3Jumpstart -->
-        <div class="project">
-            <div class="image">
-              <a href="./resources/website/jumpstart/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/jumpstart.jpeg"></a>
+    
+        <!-- Education -->
+        <section id="education">
+            <div>
+                <h2 class="title">Education</h2>
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+        </section>
+        <!-- Skills section -->
+        <div id="skills">
+            <h2 class="title">Skills</h2>
+            <div class="skills-list">
+              <div class="column">
+                  <h3>Frontend</h3>
+                  <p>HTML</p>
+                  <p>Bootstrap</p>
+                  <p>Sass</p>
+                  <p>CSS3</p>
+              </div>
+              <div class="column">
+                  <h3>Backend</h3>
+                  <p>SQL</p>
+                  <p>Node.js</p>
+                  <p>JavaScript</p>
+              </div>
+              <div class="column">
+                  <h3>Design</h3>
+                  <p>Photoshop</p>
+                  <p>Zeplin</p>
+                  <p>Adobe XD</p>
+              </div>
             </div>
-            <div class="details">
-              <h3>Jumpstart</h3>
-              <h5><a href="resources/website/jumpstart/jumpstart-specs.jpg" target="_blank">Design specification</a></h5>
-            </div>
-          </div>
-        <!-- 4Secret Agent Supply -->
-        <div class="project">
-            <div class="image">
-              <a href="./resources/website/SecretAgentSupply/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/SecretAgentSupply.jpeg"></a>
-            </div>
-            <div class="details">
-              <h3>Secret Agent Supply</h3>
-              <h5><a href="resources/website/SecretAgentSupply/redline.jpg" target="_blank">Design specification</a></h5>
-            </div>
-          </div>
-        <!-- 5Excursion -->
-        <div class="project">
-            <div class="image">
-              <a href="./resources/website/Excursion/index.html" target="_blank"> <img class="img-responsive" src="resources/images/Excursion.jpeg"></a>
-            </div>
-            <div class="details">
-              <h3>Excursion</h3>
-              <h5><a href="resources/website/Excursion/index.html" target="_blank">Design specification</a></h5>
-            </div>
-          </div>
-        <!-- Tea Cozy -->
-        <div class="project">
-            <div class="image">
-              <a href="./resources/website/Tea Cozy/index.html"  target="_blank"> <img class="img-responsive" src="resources/images/Tea Cozy.jpeg"></a>
-            </div>
-            <div class="details">
-              <h3>Tea Cozy</h3>
-              <h5><a href="resources/website/Tea Cozy/img-tea-cozy-redline.jpg" target="_blank">Design specification</a></h5>
-            </div>
-          </div>
-      </div>`
+        </div>
+    
+        <!-- Portfolio -->
+        <div id="projects">
+          <h2 class="title">What I create</h2>
+
+          <div class="projects-catalog"></div>
+
+          
+          
+         
+    
+        </div>
+      </main>
+    
+    
+    <!-- ContactMe -->
+    <div class="contact-me" id="contact-me" >
+    <div class="contact-container">
+      <div>
+        <h2 class="contact-title">Want to work together?</h2>
+      </div>
+      <div class="contact-form-container">
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="text" name="subject" placeholder="Subject"><br>
+            <textarea rows="10">Write your message here...</textarea><br>
+            <input type="submit" value="send">
+          </form>
+      </div>
+    </div>
+    </div>
+      <!-- Footer -->
+      <footer>
+        <div class="flex">
+          
+          <p>Copyright &copy; 2019 Ekaterina. All rights reserved.</p>
+       
+        </div>
+      </footer>`
     }
 }
