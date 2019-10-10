@@ -1,11 +1,14 @@
 import{ProjectsCatalogComponent} from "./project-catalog/project-catalog.component.js"
+import{ProjectsServece} from"./project.service.js"
+
 export class ProjectsComponent{
     constructor({element}){
         this._element = element;
         this._render();
         this._catalog = new ProjectsCatalogComponent({
-            element: this._element.querySelector('.projects-catalog')
-        })
+            element: this._element.querySelector('.projects-catalog'),
+            projects: ProjectsServece.getAll()
+        }) 
 
     }
     _render(){
