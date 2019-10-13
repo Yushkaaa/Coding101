@@ -31,7 +31,7 @@ const mockProjects = [{
 
 }]
 
-export const ProjectsServece = new class{
+export const ProjectsService = new class{
     getAll(){
         //
         return mockProjects;

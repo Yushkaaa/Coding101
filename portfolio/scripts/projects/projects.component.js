@@ -1,5 +1,6 @@
 import{ProjectsCatalogComponent} from "./project-catalog/project-catalog.component.js"
-import{ProjectsServece} from"./project.service.js"
+import{ProjectsDetailsComponent} from "./project-details/project-details.component.js"
+import{ProjectsService} from"./project.service.js"
 
 export class ProjectsComponent{
     constructor({element}){
@@ -7,8 +8,19 @@ export class ProjectsComponent{
         this._render();
         this._catalog = new ProjectsCatalogComponent({
             element: this._element.querySelector('.projects-catalog'),
-            projects: ProjectsServece.getAll()
+            projects: ProjectsService.getAll(),
+            onProjectSelect:(projectId)=>{
+                const ProjectsDetails = ProjectsService.getOneById(projectId);
+                this._catalog.hide();
+                this._details.show(ProjectsDetails); 
+
+            }
         }) 
+
+        this._details = new ProjectsDetailsComponent({
+            element: this._element.querySelector('.projects-details'),
+
+        })
 
     }
     _render(){
@@ -99,6 +111,8 @@ export class ProjectsComponent{
           <h2 class="title">What I create</h2>
 
           <div class="projects-catalog"></div>
+          <div class="projects-details"></div>
+
 
           
           
