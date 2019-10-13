@@ -80,7 +80,7 @@ header {
 }
 .headline h1{
   font-size: 2rem;
-  margin: 0.25rem 0;
+  margin: 1rem 0;
 }
 
 
@@ -140,6 +140,9 @@ header {
   transition: background-color 200ms linear,
   font-size;
 }
+.details{
+  margin: 1rem 0.5rem;
+}
 .details h3, h5{
   text-align: center;
 }
@@ -149,6 +152,7 @@ header {
 }
 .image img{
   width: 100%;
+  
 }
 
 
