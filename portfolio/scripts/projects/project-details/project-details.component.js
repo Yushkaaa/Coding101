@@ -20,7 +20,7 @@ export class ProjectsDetailsComponent extends BaseComponent{
              </div>
          </nav>
          </header>
-         <main>
+         <main class = "main-cont>
              <div class="img-block">
                <p><button>Back</button></p>
                <img src="resources/images/adhoc.jpeg">

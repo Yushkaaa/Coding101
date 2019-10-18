@@ -7,7 +7,7 @@ export class ProjectsComponent{
         this._element = element;
         this._render();
         this._catalog = new ProjectsCatalogComponent({
-            element: this._element.querySelector('.projects-catalog'),
+            element: this._element.querySelector('.all-cont'),
             projects: ProjectsService.getAll(),
             onProjectSelect:(projectId)=>{
                 const ProjectsDetails = ProjectsService.getOneById(projectId);
@@ -44,8 +44,9 @@ export class ProjectsComponent{
       </header>
     
       <!-- Main content -->
+      <div class="all-cont">
       <main>
-    
+     
         <div class="banner">
           <div class="headline">
             <h1>Ekaterina Yush</h1>
@@ -111,7 +112,7 @@ export class ProjectsComponent{
           <h2 class="title">What I create</h2>
 
           <div class="projects-catalog"></div>
-          <div class="projects-details"></div>
+          
 
 
           
@@ -146,6 +147,10 @@ export class ProjectsComponent{
           <p>Copyright &copy; 2019 Ekaterina. All rights reserved.</p>
        
         </div>
-      </footer>`
+      </footer>
+      </div>
+      <div class="projects-details"></div>
+      `
+        
     }
 }
