@@ -25,7 +25,8 @@ export class ProjectsComponent{
     }
     _render(){
         this._element.innerHTML = ` 
-         <header>
+        <div class="all-cont"> 
+        <header>
         <nav class="flex">
           <div class="menu">
             <ul>
@@ -44,7 +45,7 @@ export class ProjectsComponent{
       </header>
     
       <!-- Main content -->
-      <div class="all-cont">
+      
       <main>
      
         <div class="banner">

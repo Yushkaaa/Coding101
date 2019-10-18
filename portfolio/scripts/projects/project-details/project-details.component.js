@@ -11,6 +11,16 @@ export class ProjectsDetailsComponent extends BaseComponent{
      
     _render(){
         this._element.innerHTML = `
+        <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width" name="viewport">
+          <link rel="stylesheet" type="text/css" href="resources/css/details.css"/>
+          <link rel="stylesheet" type="text/css" href="resources/css/reset.css"/>
+
+        <title>Ekaterina Portfolio Site</title>
+        
+
+        </head>
         <body>
         <!-- Header Section -->
          <header>
