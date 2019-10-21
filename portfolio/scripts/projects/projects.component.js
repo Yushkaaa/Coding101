@@ -6,23 +6,33 @@ export class ProjectsComponent{
     constructor({element}){
         this._element = element;
         this._render();
-        this._catalog = new ProjectsCatalogComponent({
-            element: this._element.querySelector('.all-cont'),
-            projects: ProjectsService.getAll(),
-            onProjectSelect:(projectId)=>{
-                const ProjectsDetails = ProjectsService.getOneById(projectId);
-                this._catalog.hide();
-                this._details.show(ProjectsDetails); 
-
-            }
-        }) 
-
-        this._details = new ProjectsDetailsComponent({
-            element: this._element.querySelector('.projects-details'),
-
-        })
-
+        this._initCatalog(); 
+        this._initDetails();
     }
+    _initCatalog(){
+        this._catalog = new ProjectsCatalogComponent({
+            element: this._element.querySelector('.projects-catalog'),
+            projects: ProjectsService.getAll()
+        });
+        this._catalog.onEvent('project-select', ({detail: projectId})=>{
+            this._projectId = projectId;
+            const ProjectsDetails = ProjectsService.getOneById(projectId);
+            this._catalog.hide()
+            this._details.show(ProjectsDetails)
+        });
+    }
+
+    _initDetails(){
+        this._details = new ProjectsDetailsComponent({
+            element: this._element.querySelector('.projects-details')
+        });
+        this._details.onEvent('back',()=>{
+            this._catalog.show();
+            this._details.hide();
+        })
+        // при нажатии back каталог показывается детали скрываются 
+    }
+
     _render(){
         this._element.innerHTML = ` 
         <div class="all-cont"> 
@@ -113,7 +123,7 @@ export class ProjectsComponent{
           <h2 class="title">What I create</h2>
 
           <div class="projects-catalog"></div>
-          
+          <div class="projects-details"></div>
 
 
           
@@ -150,7 +160,7 @@ export class ProjectsComponent{
         </div>
       </footer>
       </div>
-      <div class="projects-details"></div>
+      
       `
         
     }

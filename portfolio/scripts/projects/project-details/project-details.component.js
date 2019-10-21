@@ -1,26 +1,23 @@
 import { BaseComponent } from "../../shared/components/base.component.js";
 
 export class ProjectsDetailsComponent extends BaseComponent{
-   
-  show(project){
-    this._project = project;
+  constructor({element}){
+     super({element}); 
+     this.on('click', '.back',(e)=>{
+      this.emitEvent('back')
+     })
+  }
+  show(projectDetails){
+    this._project = projectDetails;
     this._render();
     super.show(); 
-  }
+  } 
      
      
     _render(){
+        const {projectName,projectDetails,images, fullVersion} = this._project
         this._element.innerHTML = `
-        <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width" name="viewport">
-          <link rel="stylesheet" type="text/css" href="resources/css/details.css"/>
-          <link rel="stylesheet" type="text/css" href="resources/css/reset.css"/>
-
-        <title>Ekaterina Portfolio Site</title>
-        
-
-        </head>
+  
         <body>
         <!-- Header Section -->
          <header>
@@ -32,17 +29,17 @@ export class ProjectsDetailsComponent extends BaseComponent{
          </header>
          <main class = "main-cont>
              <div class="img-block">
-               <p><button>Back</button></p>
-               <img src="resources/images/adhoc.jpeg">
+               <button class="back">Back</button>
+               <img src="${images}">
              </div>  
              <div class="info-block">
                <div class="project-name">
-                   <h2>Adhoc</h2>
+                   <h2>${projectName}</h2>
                </div>
                <div class="project-info">
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                   <p>${projectDetails}</p>
                </div>
-               <p><button>See full version</button></p>
+               <button src="${fullVersion}">See full version</button>
        
              </div>
              

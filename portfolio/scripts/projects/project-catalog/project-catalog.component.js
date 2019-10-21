@@ -1,19 +1,16 @@
 import { BaseComponent } from "../../shared/components/base.component.js";
+import{ProjectsService} from "../project.service.js"
+
+export const projects = ProjectsService.getAll();
 
 export class ProjectsCatalogComponent extends BaseComponent{
-    constructor({element, projects,onProjectSelect}){
+    constructor({element, projects}){
         super({element})
         this._projects = projects;
-        this._onProjectSelect = onProjectSelect;
         this._render();
-        this._element.addEventListener('click', (e)=>{
-            let projectEl = e.target.closest('.project');
-            if (!projectEl){
-                return;
-            }
-            // console.log(projectEl.dataset.projectId)
-            this._onProjectSelect(projectEl.dataset.projectId)
-        })
+        this.on('click', ".project", (e)=>{
+          this.emitEvent('project-select', e.delegateTarget.dataset.projectId)
+        });
 
     }     
      
