@@ -27,19 +27,19 @@ export class ProjectsDetailsComponent extends BaseComponent{
              </div>
          </nav>
          </header>
-         <main class = "main-cont>
+         <main class = "main-cont details-block" >
              <div class="img-block">
-               <button class="back">Back</button>
-               <img src="${images}">
+               <button class="back details-button">Back</button>
+               <img class="details-img" src="${images}">
              </div>  
              <div class="info-block">
                <div class="project-name">
-                   <h2>${projectName}</h2>
+                   <h2 class="proj-name">${projectName}</h2>
                </div>
                <div class="project-info">
                    <p>${projectDetails}</p>
                </div>
-               <a href="./resources/website/ColmarAcademy/index.html"><button>See full version</button></a>
+               <a href="./resources/website/ColmarAcademy/index.html"><button class="details-button">See full version</button></a>
        
              </div>
              

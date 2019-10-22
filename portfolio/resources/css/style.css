@@ -268,3 +268,42 @@ footer{
 
 
 */
+
+
+
+/* Details-block*/
+.details-block{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* margin: 10px 20px; */
+}
+.img-block{
+  padding: 20px 30px;
+  width: 50%;
+}
+.info-block{
+  padding: 20px 30px;
+  width: 50%;
+}
+/* .info-block button{
+  justify-content: center;
+
+} */
+.details-img{
+  width: 90%;
+}
+.details-button{
+  background-color: #7EAFF0;
+  padding: 10px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Уголки */
+}
+.proj-name{
+    font-family: 'Lucida Handwriting';
+    line-height: 1.2rem;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
