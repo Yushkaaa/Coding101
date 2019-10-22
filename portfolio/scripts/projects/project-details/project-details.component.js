@@ -15,7 +15,7 @@ export class ProjectsDetailsComponent extends BaseComponent{
      
      
     _render(){
-        const {projectName,projectDetails,images, fullVersion} = this._project
+        const {projectName,projectDetails,images, fullVersion, gitHub} = this._project
         this._element.innerHTML = `
   
         <body>
@@ -39,7 +39,8 @@ export class ProjectsDetailsComponent extends BaseComponent{
                <div class="project-info">
                    <p>${projectDetails}</p>
                </div>
-               <a href="./resources/website/ColmarAcademy/index.html"><button class="details-button">See full version</button></a>
+               <a href="./resources/website/ColmarAcademy/index.html" target="_blank"><button class="details-button">See full version</button></a>
+               <a href="${gitHub}" target="_blank"><button class="details-button" >GitHub</button></a>
        
              </div>
              
