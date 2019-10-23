@@ -83,6 +83,16 @@ header {
   font-size: 2rem;
   margin: 1rem 0;
 }
+.icon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+  
+}
+svg{
+  color: black;
+}
 
 
 /* About me */
