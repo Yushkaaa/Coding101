@@ -38,8 +38,9 @@ export class ProjectsDetailsComponent extends BaseComponent{
                </div>
                <div class="project-info">
                    <p>${projectDetails}</p>
+                   debugger
                </div>
-               <a href="./resources/website/ColmarAcademy/index.html" target="_blank"><button class="details-button">See full version</button></a>
+               <a href="${fullVersion}" target="_blank"><button class="details-button">See full version</button></a>
                <a href="${gitHub}" target="_blank"><button class="details-button" >GitHub</button></a>
        
              </div>
