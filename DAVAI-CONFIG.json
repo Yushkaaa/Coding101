@@ -2,7 +2,7 @@
     "PROJECT_NAME": "PROJECT NAME",
     "EMAIL_CONFIG": {
       "LOGIN": "e.yushkovskaya@incodewetrust.ru",
-      "PASS": "cwt$2019",
+      "PASS": "icwt$2019",
       "SERVICE": "Yandex",
       "SENDER_LIST": "a.kazakov@incodewetrust.ru, e.yushkovskaya@incodewetrust.ru"
     }
