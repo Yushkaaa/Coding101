@@ -80,11 +80,16 @@ Page({
       })
     },
 
-  setToday(result) {
+    setToday(result) {
     let date = new Date()
     this.setData({
       todayTemp: `${result.today.minTemp}° - ${result.today.maxTemp}°`,
       todayDate: `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} Today`
     })
   },
+  onTapDayWeather(){
+    wx.navigateTo({
+      url: '/pages/list/list',
+    })
+  }
 })
