@@ -1,0 +1,42 @@
+{
+  "name": "miniapp-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "KazakovArtem <a.kazakov@incodewetrust.ru>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "eslint": "eslint --color --format table --cache --quiet app.js controllers dictionary pages services stores components/wrapper components/kit"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "husky": "^2.1.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/main/index/index",
+    "pages/main2/index/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "Miniapp starter",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "selectedColor": "#FF5567",
+    "color": "#353535",
+    "list": [
+      {
+        "pagePath": "pages/main2/index/index"
+      },
+      {
+        "pagePath": "pages/main/index/index"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,98 @@
+ .logo {
+  margin-top: 20rpx;
+  text-align: center;
+  }
+
+.logo-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 30rpx;
+}
+.prog-name-cn{
+  font-size: 60rpx;
+  color: lightskyblue;
+}
+
+.logo text{
+  font-size: 20rpx;
+}
+
+/* choose gender  */
+.gender{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content:space-around;
+  
+
+}
+.gender-img{
+  width: 250rpx;
+  height: 250rpx;
+
+
+}
+.boy, .girl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name-cn{
+  margin-top: 30rpx;
+  text-align: center;
+
+}
+/* input{
+  border:1px, gray;
+} */
+.name-cn .weui-input{
+  margin-top: 10rpx;
+  margin-left: auto;
+  margin-right: auto
+}
+.weui-input{
+  font-size: 20rpx;
+  border-style:solid;
+  border-color:  #45E3BB;
+  width: 200rpx;
+ 
+}
+/* birth date */
+.birth-date{
+  margin-top: 30rpx;
+ text-align: center;
+}
+
+/* choose country */
+.country{
+  margin-top: 30rpx;
+  text-align: center;
+  
+}
+.choose-country{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.button-block{
+  margin-top: 150rpx;
+  display: flex;
+  justify-content:space-between;
+
+}
+.button-block button{
+  width: 250rpx;
+  height: 100rpx;
+  
+  
+}
+
+.footer {
+	text-align: center;
+  position: absolute;
+	bottom: 50rpx;
+	width: 100%;
+	height: 80px;
+}

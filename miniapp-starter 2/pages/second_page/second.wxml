@@ -1,0 +1,37 @@
+<!-- logo -->
+<view class="logo">
+  <image class="logo-img" src='/images/logo.JPG'></image>
+  <view class='prog-name-cn'>名称生成器</view>
+  <view class='prog-name-en'>NAME GENERATOR</view>
+
+  <text>选择您想在您的孩子看到的5品质</text>
+</view>
+
+
+<view class='characters'>
+ <view class="column">
+    <view class='character'></view>
+    <view class='character'></view>
+    <view class='character'></view>
+  </view>
+  <view class="column">
+    <view class='character'></view>
+    <view class='character'></view>
+    <view class='character'></view>
+  </view>
+  <view class="column">
+    <view class='character'></view>
+    <view class='character'></view>
+    <view class='character'></view>
+  </view>
+</view>
+
+<!-- buttons -->
+<view class="button-block">
+  <button bindtap='onTap'>Далее</button>
+</view>
+
+<!-- footer -->
+ <view class='footer'>
+  <text>55555 已经知道了</text>
+ </view>

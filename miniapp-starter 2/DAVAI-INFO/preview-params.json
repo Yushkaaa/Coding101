@@ -1,0 +1,18 @@
+{
+  "Developer": "KazakovArtem",
+  "Date": "Oct 9th 2019 [17:04:00]",
+  "Task": "Touch response",
+  "Page": [
+    "pages/events/index/index"
+  ],
+  "Query": "",
+  "size": {
+    "total": 1856.11,
+    "packages": [
+      {
+        "name": "__FULL__",
+        "size": 1856.11
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+ .logo {
+  margin-top: 30rpx;
+  text-align: center;
+  }
+
+.logo-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 30rpx;
+}
+.prog-name-cn{
+  font-size: 60rpx;
+  color: lightskyblue;
+}
+.logo text{
+  font-size: 25rpx;
+}
+
+.characters{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40rpx;
+}
+
+
+.character{
+    width: 230rpx;
+    height: 230rpx;
+    background: rgb(196, 231, 253);
+    border: black;
+    margin: 10rpx;
+    border-radius: 80rpx;
+}
+
+
+.button-block{
+  margin-top: 150rpx;
+  
+}
+button{
+  width: 250rpx;
+  height: 80rpx;
+  background-color: #45E3BB;
+  color: white;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  position: absolute;
+  right: -2px;
+}
+
+
+.footer {
+	text-align: center;
+  position: absolute;
+	bottom: 0rpx;
+	width: 100%;
+	height: 80px;
+}

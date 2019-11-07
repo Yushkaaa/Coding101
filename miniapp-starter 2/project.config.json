@@ -1,0 +1,103 @@
+{
+	"description": "This is a template",
+	"packOptions": {
+		"ignore": [
+			{
+				"type": "regexp",
+				"value": "\\.test\\.js$"
+			},
+			{
+				"type": "folder",
+				"value": "fixtures"
+			},
+			{
+				"type": "folder",
+				"value": "coverage"
+			},
+			{
+				"type": "folder",
+				"value": "DAVAI-INFO"
+			},
+			{
+				"type": "file",
+				"value": "DAVAI-CONFIG.json"
+			},
+			{
+				"type": "file",
+				"value": ".eslintcache"
+			},
+			{
+				"type": "file",
+				"value": ".eslintrc"
+			},
+			{
+				"type": "file",
+				"value": "package.json"
+			},
+			{
+				"type": "file",
+				"value": "loginResult.json"
+			},
+			{
+				"type": "file",
+				"value": "yarn.lock"
+			},
+			{
+				"type": "file",
+				"value": "package.lock"
+			}
+		]
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.0",
+	"appid": "wxc65d07ed7948e1c5",
+	"projectname": "miniapp-starter",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

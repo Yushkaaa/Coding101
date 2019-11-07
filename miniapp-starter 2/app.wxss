@@ -1,0 +1,14 @@
+/* reset */
+text,
+rich-text,
+view,
+button
+{
+  box-sizing: border-box;
+  font-family: -apple-system, 'Segoe UI', Roboto, Avenir, PingFang, Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+Page {
+  padding-top: 40px;
+}

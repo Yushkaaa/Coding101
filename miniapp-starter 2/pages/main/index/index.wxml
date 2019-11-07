@@ -1,0 +1,67 @@
+<!-- logo -->
+<view class="logo">
+  <image class="logo-img" src='/images/logo.JPG'></image>
+  <view class='prog-name-cn'>名称生成器</view>
+  <view class='prog-name-en'>NAME GENERATOR</view>
+  <text>为您的孩子选择3个英文名称选项</text>
+</view>
+
+<!-- choose gender -->
+<view class='gender'>
+  <view class='boy'>
+    <image class='gender-img' src='/images/boy.jpg'></image>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox">
+        <checkbox />男孩
+      </label>
+    </checkbox-group>
+  </view>
+  <view class='girl'>
+      <image  class='gender-img' src='/images/girl.jpg'></image>
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox">
+          <checkbox />女孩
+        </label>
+      </checkbox-group>
+  </view>
+</view>
+<!-- baby name -->
+<view class='name-cn'>
+  <text>中文名称</text>
+  <form>
+  <input class="weui-input" auto-focus placeholder="请写中文名称"/>
+  </form>
+</view>
+
+<!-- birth date  -->
+<view class='birth-date'>
+  <text>出生日期</text>
+</view>
+
+<!-- choose country -->
+<view class='country'>
+  <text>要选择其名称的国家</text>
+  <view class='choose-country'>
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox />USA
+    </label>
+  </checkbox-group>
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox />ENG
+    </label>
+  </checkbox-group>
+  </view>
+</view>
+
+<!-- buttons -->
+<view class="button-block">
+  <button>Результаты</button>
+  <button bindtap='onTap'>Далее</button>
+</view>
+
+ <!--  -->
+ <view class='footer'>
+  <text>55555 已经知道了</text>
+ </view>
