@@ -1,0 +1,222 @@
+html {
+  font-family: "Calibri", serif;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: 1rem;
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-size: 1rem;
+}
+
+p {
+  color: #3F3F3F;
+}
+
+a {
+  color: #243238;
+}
+
+header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  align-items: center;
+  background-color: white;
+  color: #5F5F63;
+}
+header span {
+  font-size: 1.5rem;
+}
+
+.logo {
+  padding-left: 1.5rem;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+em {
+  font-weight: bold;
+  color: black;
+}
+
+nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul {
+  padding-right: 1.5rem;
+  font-weight: bold;
+}
+ul li {
+  display: inline;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: font-size linear 200ms;
+}
+ul li:hover {
+  font-size: 1.25rem;
+}
+
+.main {
+  background-color: #243238;
+  display: flex;
+  width: 100%;
+}
+
+.banner {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.banner-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content h1, h3, button {
+  width: 80%;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+}
+
+.banner-button {
+  background-color: #33ffa9;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #243238;
+  border: none;
+}
+.banner-button:hover {
+  background-color: #85ffcc;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.about-section {
+  background-color: #33ffa9;
+  width: 100%;
+}
+.about-section h1 {
+  color: #243238;
+}
+
+.about-section h2, h3, h4 {
+  color: white;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.about {
+  width: 25%;
+  margin: 1rem;
+  background-color: #243238;
+  color: white;
+  transition: background-color 200ms linear, font-size;
+}
+.about:hover {
+  background-color: #858383;
+}
+
+.about_image {
+  width: 100%;
+}
+
+.details {
+  margin: 10px;
+}
+
+.title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.install-section {
+  background-color: #243238;
+}
+
+.install-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.install-info {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  transition: background-color 200ms linear;
+}
+.install-info:hover {
+  background-color: #858383;
+}
+
+.install-img {
+  flex: 3.5;
+  line-height: 0;
+  padding: 1rem;
+  width: 30%;
+}
+
+.install-details {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.install-details h4 {
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #33ffa9;
+  padding: 1rem;
+}
+
+.copy h4 {
+  color: #243238;
+}
+
+/*# sourceMappingURL=style.css.map */
