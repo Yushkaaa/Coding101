@@ -7,7 +7,7 @@ const mockProjects = [{
 {
     "id":"colmarAcademy",
     "imageUrl":"/resources/images/ColmarAcademy.jpeg",
-    "name":"ColmarAcademy"
+    "name":"Colmar Academy"
 
 },{
     "id":"jumpstart",
@@ -36,7 +36,7 @@ const mockProject = {
     "images":"/resources/images/adhoc.jpeg",
     "fullVersion":"./resources/website/Adhoc/index.html",
     "gitHub":"https://github.com/Yushkaaa/Coding101/tree/master/projects/Adhoc"
-    
+
 }
 export const ProjectsService = new class{
     getAll(){

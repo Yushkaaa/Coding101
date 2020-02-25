@@ -1,35 +1,43 @@
-// Libs
-import { observer } from '../../../utils/observer'
-import regeneratorRuntime from '../../../utils/reg'
-
-Page(
-  observer({
-    data: {
-      authInfo: wx.getStorageSync('authinfo'),
-    },
-
-    onShareAppMessage(options) {
-      wx.ATTENTION('onShareAppMessage /pages/events/index/index', options)
-
-      return { }
-    },
-
-    async onLoad(options) {
-      wx.ATTENTION('RENDERING /pages/events/index/index', options)
-    },
-
-    onShow() {
-      if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 1
-        })
+Page({
+  data: {
+    names: [
+      {
+        name: 'JACK',
+        id: 1,
+        selected: false,
+        percent: 70,
+        friends: 'friend_1, friend_2, friend_3, + 10 ...'
+      },
+      {
+        name: 'JOY',
+        id: 2,
+        selected: false,
+        percent: 20,
+        friends: 'friend_6, friend_7'
+      },
+      {
+        name: 'JASON',
+        id: 0,
+        selected: false,
+        percent : 10,
+        friends: 'friend_4'
       }
-    },
+    ]
+  },
 
-    onTap() {
-      wx.navigateTo({
-        url: '/pages/second_page/second',
-      })
-    }
-  }, { })
-)
+  selectName(e) {
+    const { currentTarget: { dataset: { id: characterId } } } = e
+    const { names } = this.data
+    const newNames = names.map(char => {
+      return {
+        ...char,
+        selected: char.id === characterId
+      }
+    })
+
+    this.setData({
+      names: newNames
+    })
+  }
+})
+

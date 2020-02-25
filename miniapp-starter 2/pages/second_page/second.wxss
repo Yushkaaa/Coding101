@@ -40,7 +40,7 @@
 }
 button{
   width: 250rpx;
-  height: 80rpx;
+  height: 90rpx;
   background-color: #45E3BB;
   color: white;
   border-top-left-radius: 50rpx;

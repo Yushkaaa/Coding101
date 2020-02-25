@@ -11,10 +11,8 @@ export class ProjectsCatalogComponent extends BaseComponent{
         this.on('click', ".project", (e)=>{
           this.emitEvent('project-select', e.delegateTarget.dataset.projectId)
         });
+    }
 
-    }     
-     
-     
     _render(){
         this._element.innerHTML = `
         <div class="projects-list">
@@ -24,11 +22,10 @@ export class ProjectsCatalogComponent extends BaseComponent{
                   <img class="img-responsive" src="${project.imageUrl}">
                 </div>
                 <div class="details">
-                  <h3>${project.name}</h3>
-                  <h5><a href="resources/website/${project.name}/${project.id}.png" target="_blank">Design specification</a></h5>
+                  <h3 class="project-name">${project.name}</h3>
+                  <p><a href="resources/website/${project.name}/${project.id}.png" target="_blank">Design specification</a></p>
                 </div>
-              </div>`).join('')} 
-              
+              </div>`).join('')}
 
         `
     }}

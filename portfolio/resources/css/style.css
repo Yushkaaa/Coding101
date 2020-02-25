@@ -3,174 +3,141 @@ html{
   background-color: #F4F4F7;
   font-family: 'Calibri', serif;
   font-size: 16px;
+  line-height: 1.4rem;
 }
-
-body {
-    line-height: 1.4rem;
-  }
-
-.flex{
-    display:flex;
-  }
-
 h1 {
-    font-family:'Lucida Handwriting';
-    font-size: 2.5rem;
-    line-height: 0.5rem;
-    color: black;
-    
-  }
-
-  h6, h2, h3, h4 {
-    font-family:'Lucida Handwriting';
-    line-height: 1.2rem;
-    color: black;
-  }
-
-  /* Header Section */
-header {
-    display: flex;
-    height: 4rem;
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    align-items: center;
-    background-color:#E8E8F0
-  } 
-
-  nav {
-    justify-content: space-around;
-    width: 100%;
-  }
-  
- nav div {
-    display: flex;
-    align-items: center;
-  }
-  
-   ul {
-    margin-right: 1.5rem;
-  }
-  
-   ul li {
-    display: inline;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: font-size linear 200ms;
-  }
-  
-   ul li:hover {
-    font-size: 1.25rem;
-  }
- 
-  
-/*BANNER*/
-.banner{
-  background: url(./dis.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 35em;
+  font-family:'Lucida Handwriting';
+  font-size: 2.5rem;
+  color: black;
 }
-.headline{
-  width: 20rem;
-  padding: 6rem 6rem;
-  position: relative;
-  top:9rem;
-
-}
-.headline h1{
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-.icon{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5px;
-  
-}
-svg{
+h2, h3, h4, h5, h6 {
+  font-family:'Lucida Handwriting';
   color: black;
 }
 
-
-/* About me */
-
-#about h4{
-  text-align: center;
-}
-#about{
+/* Header Section */
+.header {
+  height: 4rem;
   width: 100%;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color:#E8E8F0
+}
+.menu {
+  width: 100%;
+}
+.menu__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu__list li {
+  cursor: pointer;
+  transition: font-size linear 200ms;
+}
+ul li:hover {
+  font-size: 1.25rem;
+}
+
+/*BANNER*/
+.banner{
+  background: url(./dis.png);
+  background-position: center;
+  background-size: cover;
+  height: 35em;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+.headline{
+  margin-top: 20%;
+  margin-left: 10%;
+  line-height: 2rem;
+}
+
+.portfolio-block {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* About me */
+.about h4{
   text-align: center;
 }
-.text{
- padding: 10px 160px;
- text-align: center;
-
+.about, .education {
+  text-align: center;
 }
-
 
 /* Skills */
-#skills{
+.skills{
   width: 100%;
 }
 .skills-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   padding-bottom: 1rem;
 }
 .column{
   width: 25%;
 }
+.column h4 {
+  margin-bottom: 10px;
+}
 
 /* Portfolio */
 
-#projects{
+.projects{
   width: 100%;
-  padding-bottom: 2rem;
 }
 .title{
   padding-top: 2rem;
   padding-bottom: 1rem;
   text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .projects-list{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-bottom: 1rem;
 }
 .project{
+  text-align: center;
   width:25%;
-  margin: 1rem;
+  margin:10px;
   background-color: white;
   color:#606060;
-  transition: background-color 200ms linear,
-  font-size;
+  transition: background-color 200ms linear, font-size;
 }
+
 .details{
   margin: 1rem 0.5rem;
 }
 .details h3, h5{
   text-align: center;
 }
-
+.project-name {
+  margin: 10px 0;
+}
 .project:hover{
   background-color: #CFCFCF	;
 }
 .image img{
   width: 100%;
-  
 }
 
 
 /* ContactMe */
 .contact-me{
-  margin: 0;
-  padding: 12px 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .contact-container{
@@ -189,7 +156,6 @@ svg{
 .contact-form-container {
   display: inline-block;
   width: 100%;
-  margin-right: 16px;
   vertical-align: top;
   font-size: 12px;
 }
@@ -205,9 +171,9 @@ svg{
 
 .contact-form input,
 .contact-form textarea {
-  color: inherit; 
-  font: inherit; 
-  margin: 0; 
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 .contact-form input[type="text"],
@@ -253,9 +219,6 @@ svg{
   resize: none;
 }
 
-
-
-
 /* footer */
 footer{
   border-top-style: solid;
@@ -268,38 +231,49 @@ footer{
   justify-content: space-between;
 }
 
-/* NOTES 
+/* NOTES
 1) color: inherit - наследует значение свойства у родительского элемента
-2) transition: 0.5s ease-in-out - Устанавливает, насколько быстро должно 
+2) transition: 0.5s ease-in-out - Устанавливает, насколько быстро должно
 изменяться значение стилевого свойство для которого применяется эффект перехода.
 3) text-decoration - оформление текста в виде подчеркивания, перечеркивания, линии над текстом и мигания
-
-
-
-
 */
 
 
 
 /* Details-block*/
-.details-block{
-  display: flex;
+.details-block {
   width: 100%;
+  display: flex;
   justify-content: space-around;
   /* margin: 10px 20px; */
 }
 .img-block{
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   width: 50%;
 }
 .info-block{
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   width: 50%;
+  text-align: center;
 }
-/* .info-block button{
-  justify-content: center;
+@media only screen and (max-width: 375px) {
+  .details-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .info-block{
+    /* padding: 20px 30px; */
+    width: 100%;
+  }
+}
 
-} */
 .details-img{
   width: 90%;
 }
@@ -317,3 +291,36 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+
+/* Mobaile version */
+
+@media only screen and (max-width: 375px) {
+  .banner {
+    padding-top: 4rem;
+    height: 230px;
+  }
+  .headline {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center ;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .headline .headline__name{
+    font-size: 25px;
+  }
+  .headline .headline__about{
+    font-size: 15px;
+  }
+  .project{
+    width:45%;
+    margin: 10px 0px;
+  }
+  .contact-title {
+    font-size: 20px;
+  }
+}

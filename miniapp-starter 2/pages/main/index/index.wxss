@@ -2,6 +2,8 @@
  .logo {
   margin-top: 10rpx;
   text-align: center;
+  padding-bottom: 20px;
+
   }
 
 .logo-img{
@@ -19,78 +21,126 @@
   font-size: 20rpx;
 }
 
-/* choose gender  */
-.gender{
-  margin-top: 30rpx;
+.img {
+  width: 104px;
+  height: 132px;
+}
+page .img {
   display: flex;
-  justify-content:space-around;
+  position: absolute;
+  top: 0px;
 }
 
-.gender-img{
-  width: 250rpx;
-  height: 250rpx;
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  padding-bottom: 5px;
 }
-
-.boy, .girl {
+.block {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
+.friends {
+  font-size: 12px;
+}
+.progress {
+  width: 60%;
+}
+.name__text{
+  font-size: 20px;
+  width: 20%;
 }
 
-.name-cn{
-  margin-top: 30rpx;
-  text-align: center;
-
+.like {
+  width: 25px;
+  height: 25px;
 }
 
-.name-cn .weui-input{
-  margin-top: 10rpx;
-  margin-left: auto;
-  margin-right: auto
-}
-.weui-input{
-  font-size: 20rpx;
-  border-style:solid;
-  border-color:  #45E3BB;
-  width: 200rpx;
- 
-}
-/* birth date */
-.birth-date{
-  margin-top: 30rpx;
- text-align: center;
+
+.names {
+  width: 100%;
 }
 
-/* choose country */
-.country{
-  margin-top: 30rpx;
-  text-align: center;
-  
-}
-.choose-country{
+.names__name-block {
+  width: 100%;
   display: flex;
-  justify-content:space-around;
-  align-items: center;
-  margin-top: 20rpx;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 21px;
 }
 
-.button-block{
-  margin-top: 150rpx;
+.names__name-block-selected {
+  background-color: #dbfff6;
+}
+
+.names__name-block-selected .name__audio-play-img {
+  width: 45px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.names__name-block .name {
+  width: 100%;
   display: flex;
-  justify-content:space-between;
-
-}
-.button-block button{
-  width: 250rpx;
-  height: 90rpx;
-  
-  
+  flex-direction: row;
 }
 
-.footer {
-	text-align: center;
-  position: absolute;
-	bottom: 25rpx;
-	width: 100%;
-	height: 80px;
+.name .name__text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.name .name__audio-img {
+  width: 32px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.names__name-block .description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.names__name-block .description .description-block {
+  max-width: 200px;
+}
+
+.names__name-block .description .description__text {
+  font-size: 12px;
+}
+
+.names__name-block .description .name__like-img {
+  width: 32px;
+  height: 32px;
+  padding-right: 5px;
+}
+
+.names__name-block-selected .description .name__like-selected-img {
+  width: 33px;
+  height: 33px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 340px) {
+  .names__name-block {
+    padding: 10px 12px;
+  }
+  .names__name-block .name {
+    margin-bottom: 8px;
+  }
+  .name .name__text {
+    font-size: 15px;
+  }
+  .name .name__audio-img {
+    width: 25px;
+    height: 20px;
+    margin-left: 10px;
+  }
 }
